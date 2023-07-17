@@ -1,0 +1,13 @@
+#!/bin/bash
+
+git add .
+echo "enter commit message"
+read msg
+sleep 1
+your commit message is "$msg"
+sleep 4
+git commit -m "$msg"
+sleep 2
+echo "pushing all the changes"
+git push origin master
+sleep 2
