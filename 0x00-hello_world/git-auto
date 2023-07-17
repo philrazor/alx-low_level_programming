@@ -1,13 +1,10 @@
 #!/bin/bash
 
+# Store the commit message in a variable
+message="fulfilled the requirements"
+
+# Automate the git commands
 git add .
-echo "enter commit message"
-read msg
-sleep 1
-your commit message is "$msg"
-sleep 4
-git commit -m "$msg"
-sleep 2
-echo "pushing all the changes"
+git commit -m "$message"
 git push origin master
-sleep 2
+
