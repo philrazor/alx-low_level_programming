@@ -1,2 +1,2 @@
 #!/bin/bash
-CFILE="main.c" ; newName="${CFILE%.*}" ; OUT-PUT="$newName.o" ; ./1-compiler
+gcc -c $CFILE 
